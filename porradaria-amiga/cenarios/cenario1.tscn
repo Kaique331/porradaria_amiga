@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bthmcv76ww1nx"]
+
+[ext_resource type="PackedScene" uid="uid://0ei2ud08v8y8" path="res://Buneco/buneco.tscn" id="1_higou"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3aoie"]
+
+[node name="Node2D" type="Node2D" unique_id=51592693]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1431800099]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=908418830]
+sprite_frames = SubResource("SpriteFrames_3aoie")
+
+[node name="Buneco" parent="." unique_id=1491875768 instance=ExtResource("1_higou")]

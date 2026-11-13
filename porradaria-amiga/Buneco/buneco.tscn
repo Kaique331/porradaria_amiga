@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://0ei2ud08v8y8"]
+
+[ext_resource type="Texture2D" uid="uid://cdfy40mhhhrn4" path="res://Buneco/imagens/jogador_1/parado/jogador1_parado_1.png" id="1_ebspd"]
+[ext_resource type="Texture2D" uid="uid://d23uyt1387ys6" path="res://Buneco/imagens/jogador_1/parado/jogador1_parado_2.png" id="2_14p6i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_475nj"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ebspd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_14p6i")
+}],
+"loop": 1,
+"name": &"parado",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_86ap7"]
+size = Vector2(20, 26)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8imwq"]
+radius = 6.0
+height = 26.0
+
+[node name="Buneco" type="Node2D" unique_id=1491875768]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=838787343]
+sprite_frames = SubResource("SpriteFrames_475nj")
+animation = &"parado"
+frame_progress = 0.74106073
+
+[node name="Hitbox_buneco" type="Area2D" parent="." unique_id=1470591877]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox_buneco" unique_id=1908540029]
+shape = SubResource("RectangleShape2D_86ap7")
+
+[node name="Hitbox_arma" type="Area2D" parent="." unique_id=870786082]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox_arma" unique_id=811382891]
+position = Vector2(7, 0)
+shape = SubResource("CapsuleShape2D_8imwq")
