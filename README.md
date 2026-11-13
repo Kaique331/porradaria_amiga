@@ -1,2 +1,2 @@
 # porradaria_amiga
-projeto de comutação em nuvem
+projeto de computação em nuvem
