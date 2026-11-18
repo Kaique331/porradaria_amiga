@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cfd5n32il14qo"]
+
+[node name="Tela_inicio" type="Node2D" unique_id=1438709246]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1704454469]
+
+[node name="Jogar" type="Button" parent="." unique_id=1323947731]
+offset_left = -24.0
+offset_top = 33.0
+offset_right = 26.0
+offset_bottom = 45.0
+text = "a"
+
+[node name="Créditos" type="Button" parent="." unique_id=2062276148]
+offset_left = -29.0
+offset_top = 89.0
+offset_right = 36.0
+offset_bottom = 120.0
+
+[node name="Button3" type="Button" parent="." unique_id=504164832]
+offset_left = -36.0
+offset_top = 143.0
+offset_right = 40.0
+offset_bottom = 167.0

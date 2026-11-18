@@ -11,4 +11,10 @@
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=908418830]
 sprite_frames = SubResource("SpriteFrames_3aoie")
 
-[node name="Buneco" parent="." unique_id=1491875768 instance=ExtResource("1_higou")]
+[node name="Buneco1" parent="." unique_id=1491875768 instance=ExtResource("1_higou")]
+position = Vector2(-37, 40)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1746199456]
+
+[node name="Buneco2" parent="." unique_id=641422860 instance=ExtResource("1_higou")]
+position = Vector2(51, 40)

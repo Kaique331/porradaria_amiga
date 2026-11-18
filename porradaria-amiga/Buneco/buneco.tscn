@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://0ei2ud08v8y8"]
 
+[ext_resource type="Script" uid="uid://duyc5fivm2gvh" path="res://Buneco/buneco.gd" id="1_14p6i"]
 [ext_resource type="Texture2D" uid="uid://cdfy40mhhhrn4" path="res://Buneco/imagens/jogador_1/parado/jogador1_parado_1.png" id="1_ebspd"]
 [ext_resource type="Texture2D" uid="uid://d23uyt1387ys6" path="res://Buneco/imagens/jogador_1/parado/jogador1_parado_2.png" id="2_14p6i"]
 
@@ -7,7 +8,37 @@
 animations = [{
 "frames": [],
 "loop": 1,
-"name": &"default",
+"name": &"abaixar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"abaixar-andar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"abaixar-atacar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"abaixar-parado",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"andar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"ar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"atacar",
 "speed": 5.0
 }, {
 "frames": [{
@@ -20,6 +51,26 @@ animations = [{
 "loop": 1,
 "name": &"parado",
 "speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"parado-abaixar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"parado-atacar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"parado-pular",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"pular",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_86ap7"]
@@ -30,11 +81,11 @@ radius = 6.0
 height = 26.0
 
 [node name="Buneco" type="Node2D" unique_id=1491875768]
+script = ExtResource("1_14p6i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=838787343]
 sprite_frames = SubResource("SpriteFrames_475nj")
 animation = &"parado"
-frame_progress = 0.74106073
 
 [node name="Hitbox_buneco" type="Area2D" parent="." unique_id=1470591877]
 
