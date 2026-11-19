@@ -97,3 +97,5 @@ shape = SubResource("RectangleShape2D_86ap7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox_arma" unique_id=811382891]
 position = Vector2(7, 0)
 shape = SubResource("CapsuleShape2D_8imwq")
+
+[connection signal="area_entered" from="Hitbox_buneco" to="." method="_on_hitbox_buneco_area_entered"]
